@@ -4,8 +4,11 @@ Code for paper titled "Where are My Errors?: Unleashing Machine Learning to Stab
 a) Soft decoding ECC implementation 
 
 The Soft-Decoding-Based-ECC folder contains the data files and code to implement soft decoding following the algorithm proposed in the paper:
+
   Roel Maes et al. "Low-Overhead Implementation of a Soft Decision Helper Data Algorithm for SRAM PUFs" CHES, 2009.
+  
 The soft decoding is built on top of the concatenated code - Repetition (3,1,3) + Reed-Muller (2,4) proposed in the paper:
+
   Christoph Bosch et al. "Efficient Helper Data Key Extractor on FPGAs" CHES, 2008.
 
 Run the main file: "Soft-Decoding-based-ECC/Concat_code_softDecoding_ECC_withSRAMPUF.py" 
