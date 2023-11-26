@@ -4,5 +4,3 @@ Code for paper titled "Where are My Errors?: Unleashing Machine Learning to Stab
 a) Soft decoding ECC implementation 
 
 Run the main file: "Soft-Decoding-based-ECC/Concat_code_softDecoding_ECC_withSRAMPUF.py" 
-
-b) Min-entropy calculation 
