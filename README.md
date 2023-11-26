@@ -3,8 +3,13 @@ Code for paper titled "Where are My Errors?: Unleashing Machine Learning to Stab
 
 a) Soft decoding ECC implementation 
 
+The Soft-Decoding-Based-ECC folder contains the data files and code to implement soft decoding following the algorithm proposed in the paper:
+  Roel Maes et al. "Low-Overhead Implementation of a Soft Decision Helper Data Algorithm for SRAM PUFs" CHES, 2009.
+The soft decoding is built on top of the concatenated code - Repetition (3,1,3) + Reed-Muller (2,4) proposed in the paper:
+  Christoph Bosch et al. "Efficient Helper Data Key Extractor on FPGAs" CHES, 2008.
+
 Run the main file: "Soft-Decoding-based-ECC/Concat_code_softDecoding_ECC_withSRAMPUF.py" 
-The input binary files for the code are obatined from temperature sweep experiments on Arduino UNO boards with SRAM PUF dimesnion of 128x64
+The input binary files for the code are obtained from temperature sweep experiments on Arduino UNO boards with SRAM PUF dimension of 128x64
 Dependencies: 
 1) Majority Voted (over 15 measurements) Golden Response at all temperatures in the range (-23.5C, 70C) - "GResp_temp_all_Br1.npy"
 2) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions - "Reliability_PUF_ambient_Br1.npy"
