@@ -11,9 +11,10 @@ Code for paper titled "Where are My Errors?: Unleashing Machine Learning to Stab
 
   Christoph Bosch et al. "Efficient Helper Data Key Extractor on FPGAs" CHES, 2008.
 
-### Run the main file: "Soft-Decoding-based-ECC/Concat_code_softDecoding_ECC_withSRAMPUF.py" 
+### Run the main file: 
+"Soft-Decoding-based-ECC/Concat_code_softDecoding_ECC_withSRAMPUF.py" 
 
-### The input binary files for the code are obtained from temperature sweep experiments on Arduino UNO boards with SRAM PUF dimension of 128x64
+### The input binary files for the code are obtained from temperature sweep experiments on an Arduino UNO board with an SRAM PUF dimension of 128x64.
 Dependencies: 
 1) Majority Voted (over 15 measurements) Golden Response at all temperatures in the range (-23.5C, 70C) - "GResp_temp_all_Br1.npy"
 2) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions - "Reliability_PUF_ambient_Br1.npy"
