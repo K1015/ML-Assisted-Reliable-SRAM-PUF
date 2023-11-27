@@ -29,6 +29,6 @@ C1 - Reed-Muller Code (n2,k2,d2); for RM(2,4) n2 = 16, k2 = 11, d2 = 4
 Key Width = 128 bit, requiring ceil(171/(k1* k2))* n1* n2 = 768 raw PUF bits
 
 ### Two output plots are:
-'BER_SRAM_PUF_Temp_all.pdf' - BER vs Temp for all cases
+'Soft_Decoding_BER_SRAM_PUF_Temp_all.pdf' - BER vs Temp for all cases
 
-'BER_SRAM_PUF_Temp_all.pdf' - KER vs Temp for all cases
+'Soft_Decoding_KER_SRAM_PUF_Temp_all.pdf' - KER vs Temp for all cases
