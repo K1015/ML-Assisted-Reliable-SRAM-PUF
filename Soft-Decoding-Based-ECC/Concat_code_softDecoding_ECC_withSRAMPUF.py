@@ -283,7 +283,7 @@ ax.grid(True)
 plt.legend(frameon=True,framealpha=1)
 plt.legend(loc='upper center', ncol=1,bbox_to_anchor=(0.51, 1.52),prop={'size': 28, 'family':'Arial', 'weight':'regular'}         
            ,edgecolor='black',columnspacing=0.3,handlelength=1.0,handletextpad=0.5)
-plt.savefig('BER_SRAM_PUF_Temp_all.pdf', format='pdf', transparent=True,bbox_inches='tight')
+plt.savefig('Soft_Decoding_BER_SRAM_PUF_Temp_all.pdf', format='pdf', transparent=True,bbox_inches='tight')
 plt.show()
 
 #%%
@@ -348,5 +348,5 @@ ax.grid(True)
 plt.legend(frameon=True,framealpha=1)
 plt.legend(loc='upper center', ncol=1,bbox_to_anchor=(0.51, 1.48),prop={'size': 28, 'family':'Arial', 'weight':'regular'}         
            ,edgecolor='black',columnspacing=0.3,handlelength=1.0,handletextpad=0.5)
-plt.savefig('KER_SRAM_PUF_Temp_all.pdf', format='pdf', transparent=True,bbox_inches='tight')
+plt.savefig('Soft_Decoding_KER_SRAM_PUF_Temp_all.pdf', format='pdf', transparent=True,bbox_inches='tight')
 plt.show()
