@@ -15,12 +15,12 @@ Code for paper titled "Where are My Errors?: Unleashing Machine Learning to Stab
 "Soft-Decoding-based-ECC/Concat_code_softDecoding_ECC_withSRAMPUF.py" 
 
 ### The input binary files for the code are obtained from temperature sweep experiments on an Arduino UNO board with an SRAM PUF dimension of 128x64.
-Dependencies: 
-1) Majority Voted (over 15 measurements) Golden Response at all temperatures in the range (-23.5C, 70C) - "GResp_temp_all_Br1.npy"
-2) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions - "Reliability_PUF_ambient_Br1.npy"
-3) Corrected PUF responses using Transfer Learning at all temperatures - "TransferL_corrected_Resp_temp_all_Br1.npy"
-4) Corrected PUF responses using Continual Learning at all temperatures - "ContinualL_corrected_Resp_temp_all_Br1.npy"
+Input Dependencies: 
+1) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions - "Reliability_PUF_ambient_Br1.npy"
+2) Corrected PUF responses using Transfer Learning at all temperatures - "TransferL_corrected_Resp_temp_all_Br1.npy"
+3) Corrected PUF responses using Continual Learning at all temperatures - "ContinualL_corrected_Resp_temp_all_Br1.npy"
 
+Golden Response at all temperatures in the range (-23.5C, 70C) - "GResp_temp_all_Br1.npy" required to compute BER, KER
 ### Soft Decoding Parameters for Concatenated Code(C1, C2):
 C1 - Repetetion Code (n1,k1,d1); n1 = 3, k1 = 1, d1 = 3
 
