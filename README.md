@@ -32,3 +32,27 @@ Key Width = 128 bit, requiring ceil(171/(k1* k2))* n1* n2 = 768 raw PUF bits
 'Soft_Decoding_BER_SRAM_PUF_Temp_all.pdf' - BER vs Temp for all cases
 
 'Soft_Decoding_KER_SRAM_PUF_Temp_all.pdf' - KER vs Temp for all cases
+
+
+## Min-Entropy Loss Computation
+
+### The Min-Entropy-Loss folder contains the data files and code to implement the empirical min-entropy loss following the algorithm proposed in the paper:
+
+  Jeroen Delvaux et al. "Efficient fuzzy extraction of PUF-induced secrets: Theory and applications" CHES, 2016.
+  Min-entropy loss computed for BCH[15,11,1]; Standard array generated using all the codewords of BCH[15,11,1]
+
+### Run the main file: 
+Dependencies shared for all: "Codeword_w.json" - all codewords for BCH[15,11,1] code & "std_array_p_complete.json" - complete standard array generated from the codewords
+1) Min-entropy loss with fixed helper data: "entropy_BCH_15_11_1_fixed_helper_data_nolearning.py"
+   Dependencies: Uniformity at all temperatures before using our proposed ML-assisted ECC - "Uniformity_pre_TL.npy"
+2) Min-entropy loss with fixed helper data and Transfer Learning: "entropy_BCH_15_11_1_fixed_helper_data_w_TL.py"
+   Dependencies: Uniformity at all temperatures after using our proposed ML-assisted ECC (Transfer Learning) - "Uniformity_post_TL.npy"
+3) Min-entropy loss with multiple helper data: "entropy_BCH_15_11_1_multiple_helper_data.py"
+   Dependencies: "Uniformity_pre_TL.npy" and Erroneous PUF responses before Transfer Learning at all temperatures for Arduino UNO board with an SRAM PUF dimension of 128x64 - "GResp_'+(Temp)+'.json"
+
+To directly see the results use this file - Plot uniformity, min-entropy, and loss w.r.t. temperature: "Plot_all.py" using the output (.npy) files generated from the previous steps. 
+
+### Two output plots are:
+'Min_Entropy_and_Uni_wrt_Temp.pdf' - Min Entropy and Uniformity vs Temp for all cases
+
+'Min_Entropy_Loss_wrt_Temp.pdf' - Min-Entropy Loss vs Temp for all cases
