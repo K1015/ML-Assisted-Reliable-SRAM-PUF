@@ -303,7 +303,7 @@ KER_Accuracy_int_PostML_ECC = np.ones(len(BER_Accuracy_PostML_ECC[boardID,:]))
 KER_Accuracy_int_PostML_ECC_sp = np.ones(len(BER_Accuracy_PostML_ECC_sp[boardID,:]))
 
 for i in range(len(KER_Accuracy_int_Vanilla)):
-    for j in range(t2):
+    for j in range(t2+1):
         KER_Accuracy_int_Vanilla[i] = KER_Accuracy_int_Vanilla[i] - ncr(n2,j)*(1-BER_Accuracy_Vanilla[boardID,i]/100)**(n2-j)*(BER_Accuracy_Vanilla[boardID,i]/100)**j
         KER_Accuracy_int_PostECC[i] = KER_Accuracy_int_PostECC[i] - ncr(n2,j)*(1-BER_Accuracy_PostECC[boardID,i]/100)**(n2-j)*(BER_Accuracy_PostECC[boardID,i]/100)**j
         KER_Accuracy_int_PostML_ECC[i] = KER_Accuracy_int_PostML_ECC[i] - ncr(n2,j)*(1-BER_Accuracy_PostML_ECC[boardID,i]/100)**(n2-j)*(BER_Accuracy_PostML_ECC[boardID,i]/100)**j
@@ -315,11 +315,11 @@ KER_Accuracy_PostML_ECC = np.ones(len(BER_Accuracy_PostML_ECC[boardID,:]))
 KER_Accuracy_PostML_ECC_sp = np.ones(len(BER_Accuracy_PostML_ECC_sp[boardID,:]))
 
 for i in range(len(KER_Accuracy_Vanilla)):
-    for j in range(t1):
-        KER_Accuracy_Vanilla[i] = KER_Accuracy_Vanilla[i] - ncr(n1,j)*(1-KER_Accuracy_int_Vanilla[i]/100)**(n1-j)*(KER_Accuracy_int_Vanilla[i]/100)**j
-        KER_Accuracy_PostECC[i] = KER_Accuracy_PostECC[i] - ncr(n1,j)*(1-KER_Accuracy_int_PostECC[i]/100)**(n1-j)*(KER_Accuracy_int_PostECC[i]/100)**j
-        KER_Accuracy_PostML_ECC[i] = KER_Accuracy_PostML_ECC[i] - ncr(n1,j)*(1-KER_Accuracy_int_PostML_ECC[i]/100)**(n1-j)*(KER_Accuracy_int_PostML_ECC[i]/100)**j
-        KER_Accuracy_PostML_ECC_sp[i] = KER_Accuracy_PostML_ECC_sp[i] - ncr(n1,j)*(1-KER_Accuracy_int_PostML_ECC_sp[i]/100)**(n1-j)*(KER_Accuracy_int_PostML_ECC_sp[i]/100)**j
+    for j in range(t1+1):
+        KER_Accuracy_Vanilla[i] = KER_Accuracy_Vanilla[i] - ncr(n1,j)*(1-KER_Accuracy_int_Vanilla[i])**(n1-j)*(KER_Accuracy_int_Vanilla[i])**j
+        KER_Accuracy_PostECC[i] = KER_Accuracy_PostECC[i] - ncr(n1,j)*(1-KER_Accuracy_int_PostECC[i])**(n1-j)*(KER_Accuracy_int_PostECC[i])**j
+        KER_Accuracy_PostML_ECC[i] = KER_Accuracy_PostML_ECC[i] - ncr(n1,j)*(1-KER_Accuracy_int_PostML_ECC[i])**(n1-j)*(KER_Accuracy_int_PostML_ECC[i])**j
+        KER_Accuracy_PostML_ECC_sp[i] = KER_Accuracy_PostML_ECC_sp[i] - ncr(n1,j)*(1-KER_Accuracy_int_PostML_ECC_sp[i])**(n1-j)*(KER_Accuracy_int_PostML_ECC_sp[i])**j
 
         
 #%%
