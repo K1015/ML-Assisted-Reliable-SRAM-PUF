@@ -35,13 +35,13 @@ Cond_minEntropy = np.zeros(len(TempRange))
 minEntropy_loss = np.zeros(len(TempRange))
 
 #%%
-count = 0
+
 for predTemp in TempRange:
+    count = np.where(predTemp==TempRange)[0][0]
     # Opening JSON file
     #Chaning helper data at each temperature
     with open(path + 'GResp_'+str(predTemp)+'.json') as json_file:
         bins = json.load(json_file)
-
 
     bins_unique = {0: [0] * len(bins['0']),
      1: [0] * len(bins['1']),
@@ -68,7 +68,6 @@ for predTemp in TempRange:
     ##	Probability of each Bin	##
     
     prob_p = Uniformity[count]	#Avg. of prob_p list
-    count = count + 1
     b_star = min(prob_p , 1 - prob_p)
     for i in range(16):
     	
@@ -116,7 +115,7 @@ for predTemp in TempRange:
     minEntropy_loss[count] = minEntropy[count] - Cond_minEntropy[count]
     
     print("no_of_ones in std. array - ",no_of_ones)
-    count = count + 1
+
 
 #%%
 #minEntropy is the same as that in the fixed helper data case
