@@ -87,7 +87,7 @@ for predTemp in TempRange:
         for i in range(len(bins[key])):
             print(key, " -> ", ((bins[key][i] )))
             for j in Codewords_w:		              ## Iterating over all w's
-                temp_p = int(bins[key][i], 2)^int(j,2)        ## temporary helper data p = x xor w
+                temp_p = int(bins[key][i], 2)^int(j,2)        ## Temporary helper data p = x xor w
                 
                 temp_p_use = str( bin(temp_p)[2:].zfill(len(j))) 
                 if(no_of_ones<2**15):
