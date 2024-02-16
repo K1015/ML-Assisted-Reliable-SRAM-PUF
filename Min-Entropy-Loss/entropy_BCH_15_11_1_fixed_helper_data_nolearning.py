@@ -91,10 +91,10 @@ for predTemp in TempRange:
                 
                 temp_p_use = str( bin(temp_p)[2:].zfill(len(j))) 
                 if(no_of_ones<2**15):
-                    if (temp_p_use in chain.from_iterable(std_array_p)) == True:
+                    if (temp_p_use in chain.from_iterable(std_array_p)) == True:  ## Search for the temporary helper data in Standard Array
                 
                         posi_in_p = ([(ix,iy) for ix, row in enumerate(std_array_p) for iy, k in enumerate(row) if k == temp_p_use])		# gives the position of p in std array
-                        std_array_p_BCH_unique[posi_in_p[0][0]][posi_in_p[0][1]]= std_array_p_BCH_unique[posi_in_p[0][0]][posi_in_p[0][1]]+ 1 	# posi_in_p[0][0] - row index;; posi_in_p[0][1] - col. index
+                        std_array_p_BCH_unique[posi_in_p[0][0]][posi_in_p[0][1]] = std_array_p_BCH_unique[posi_in_p[0][0]][posi_in_p[0][1]]+ 1 	# posi_in_p[0][0] - row index;; posi_in_p[0][1] - col. index
                         if(std_array_p_BCH_unique[posi_in_p[0][0]][posi_in_p[0][1]]==1):
                             no_of_ones = no_of_ones +1				
                             count_p_each_bins[int(key)] = count_p_each_bins[int(key)] +1 
