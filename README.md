@@ -1,5 +1,5 @@
 # ML-Assisted-Reliable-SRAM-PUF
-Code for paper titled "Where are My Errors?: Unleashing Machine Learning to Stabilize SRAM-PUFs with Reduced Entropy Leakage" with the following functionalities:
+Code for paper titled "Enhancing SRAM-Based PUF Reliability Through Machine Learning-Aided Calibration Techniques" with the following functionalities:
 
 ## Soft decoding ECC implementation 
 
