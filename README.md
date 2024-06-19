@@ -5,7 +5,7 @@ Code for the paper titled "Enhancing SRAM-Based PUF Reliability Through Machine 
 The raw SRAM-PUF data from Arduino UNO with temperature and voltage variations and the code to read data from the .csv files. The zip file needs to be extracted to retrieve the sub-folders.
 
 ## ML-based PUF Recalibration
-This has 4 sub-folders for Temperature-UNO, Temperature-Zero, Voltage-UNO, and Voltage-Zero. Each UNO directory contains data files obtained from the extraction in Raw_Data_UNO.zip. The ML-based recalibration code for Continual and Transfer Learning are inside each sub-directory. 
+This has 4 sub-folders for Temperature-UNO, Temperature-Zero, Voltage-UNO, and Voltage-Zero. Each UNO directory contains data files obtained from the extraction in Raw_Data_UNO.zip. The ML-based recalibration code for Continual and Transfer Learning is inside each sub-directory. 
 
 ## ECC implementation 
 ### The ECC folder contains two subfolders i.e.: Soft-Decoding-UNO and Soft-Decoding-Zero. The code to implement soft decoding follows the algorithm proposed in the paper:
