@@ -4,7 +4,7 @@
 """
 Created on Sun Feb  6 22:29:11 2022
 
-@author: 
+@author: Thermal Chamber
 """
 
 #Error Study in 3x3 window
