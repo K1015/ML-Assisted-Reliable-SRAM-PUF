@@ -14,7 +14,9 @@ The zip file needs to be extracted to retrieve the sub-folders:
 This has 4 sub-folders for Temperature-UNO, Temperature-Zero, Voltage-UNO, and Voltage-Zero. Each UNO directory contains data files obtained from the extraction in Raw_Data_UNO.zip. The ML-based recalibration code for Continual and Transfer Learning is inside each sub-directory. 
 
 ### Run the main file: 
-Continual Learning: "MLbased_Recalibration_XX_Continual_Learning_YY.py" or Transfer Learning "MLbased_Recalibration_XX_Transfer_Learning_YY.py" where XX is either UNO or Zero and YY is either Temp or Volt
+1) Continual Learning: "MLbased_Recalibration_XX_Continual_Learning_YY.py"
+2) Transfer Learning "MLbased_Recalibration_XX_Transfer_Learning_YY.py"
+where XX is either UNO or Zero and YY is either Temp or Volt
 
 ### The input binary files for the code are obtained after ML-based PUF Recalibration. 
 The SRAM PUF dimension in Arduino UNO boards is 128x64 and in Zero boards 6815x32.
@@ -28,6 +30,7 @@ Outputs:
 
 ## ECC implementation 
 The ECC folder contains two subfolders i.e.: Soft-Decoding-UNO and Soft-Decoding-Zero, each of ECC on UNO and Zero boards respectively.
+
 ### The code to implement soft decoding follows the algorithm proposed in the paper:
   Roel Maes et al. "Low-Overhead Implementation of a Soft Decision Helper Data Algorithm for SRAM PUFs" CHES, 2009.
   
