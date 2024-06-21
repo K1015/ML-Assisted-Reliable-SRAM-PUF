@@ -16,6 +16,7 @@ This has 4 sub-folders for Temperature-UNO, Temperature-Zero, Voltage-UNO, and V
 ### Run the main file: 
 1) Continual Learning: "MLbased_Recalibration_XX_Continual_Learning_YY.py"
 2) Transfer Learning "MLbased_Recalibration_XX_Transfer_Learning_YY.py"
+
 where XX is either UNO or Zero and YY is either Temp or Volt
 
 ### The input binary files for the code are obtained after ML-based PUF Recalibration. 
