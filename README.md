@@ -26,9 +26,10 @@ Input Dependencies (all obtained from raw PUF processing):
 2) PUF Golden responses at all temperatures and all boards: "GResp_UNO_temp_all.npy" and "GResp_UNO_Volt_all.npy" ; Zero: "GResp_temp_Zero_all_Oct14.npy" and "GResp_volt_Zero_all_Oct11.npy"
 
 Outputs:
-1) Corrected PUF responses using Transfer Learning at all temperatures and all boards - UNO: "CorrectedResp_XX_TransferLearning_YY.npy" 
-2) Corrected PUF responses using Continual Learning at all temperatures and all boards - UNO: "CorrectedResp_XX_ContinualLearning_YY.npy" 
+1) Corrected PUF responses using Transfer Learning at all temperatures and all boards: "CorrectedResp_XX_TransferLearning_YY.npy" 
+2) Corrected PUF responses using Continual Learning at all temperatures and all boards: "CorrectedResp_XX_ContinualLearning_YY.npy" 
 
+where XX is either UNO or Zero and YY is either Temp or Volt
 ## ECC implementation 
 The ECC folder contains two subfolders i.e.: Soft-Decoding-UNO and Soft-Decoding-Zero, each of ECC on UNO and Zero boards respectively.
 
