@@ -21,8 +21,8 @@ where XX is either UNO or Zero and YY is either Temp or Volt
 ### The input binary files for the code are obtained after ML-based PUF Recalibration. 
 The SRAM PUF dimension in Arduino UNO boards is 128x64 and in Zero boards 6815x32.
 Input Dependencies (all obtained from raw PUF processing): 
-1) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions - UNO: "Rel_UNO_AmbientTemp_nMeas15.npy" and "Rel_UNO_AmbientVolt_nMeas15.npy"; Zero: "Rel_temp_Zero_ambient_Oct14.npy" and "Rel_volt_Zero_ambient_Oct11.npy"
-2) PUF Golden responses at all temperatures and all boards - UNO: "GResp_UNO_temp_all.npy" and "GResp_UNO_Volt_all.npy" ; Zero: "GResp_temp_Zero_all_Oct14.npy" and "GResp_volt_Zero_all_Oct11.npy"
+1) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions: "Rel_UNO_AmbientTemp_nMeas15.npy" and "Rel_UNO_AmbientVolt_nMeas15.npy"; Zero: "Rel_temp_Zero_ambient_Oct14.npy" and "Rel_volt_Zero_ambient_Oct11.npy"
+2) PUF Golden responses at all temperatures and all boards: "GResp_UNO_temp_all.npy" and "GResp_UNO_Volt_all.npy" ; Zero: "GResp_temp_Zero_all_Oct14.npy" and "GResp_volt_Zero_all_Oct11.npy"
 
 Outputs:
 1) Corrected PUF responses using Transfer Learning at all temperatures and all boards - UNO: "CorrectedResp_XX_TransferLearning_YY.npy" 
@@ -43,10 +43,10 @@ The ECC folder contains two subfolders i.e.: Soft-Decoding-UNO and Soft-Decoding
 ### The input binary files for the code are obtained after ML-based PUF Recalibration. 
 The SRAM PUF dimension in Arduino UNO boards is 128x64 and in Zero boards 6815x32.
 Input Dependencies: 
-1) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions - UNO: "Rel_UNO_AmbientTemp_nMeas15.npy" and Zero: "Rel_temp_Zero_ambient_Oct14.npy"
-2) Corrected PUF responses using Transfer Learning at all temperatures and all boards - UNO: "CorrectedResp_UNO_TransferLearning_Temp.npy" and Zero: "CorrectedResp_Zero_Temp_TransferLearning.npy"
-3) Corrected PUF responses using Continual Learning at all temperatures and all boards - UNO: "CorrectedResp_UNO_ContinualLearning_Temp.npy" and Zero: "CorrectedResp_Zero_Temp_ContinualLearning.npy"
-4) PUF Golden responses at all temperatures and all boards - UNO: "GResp_UNO_temp_all.npy" and Zero: "GResp_temp_Zero_all_Oct14.npy"
+1) Reliability Information in the range of (50%,100%) for all PUF responses at ambient conditions: "Rel_UNO_AmbientTemp_nMeas15.npy" and Zero: "Rel_temp_Zero_ambient_Oct14.npy"
+2) Corrected PUF responses using Transfer Learning at all temperatures and all boards: "CorrectedResp_UNO_TransferLearning_Temp.npy" and Zero: "CorrectedResp_Zero_Temp_TransferLearning.npy"
+3) Corrected PUF responses using Continual Learning at all temperatures and all boards: "CorrectedResp_UNO_ContinualLearning_Temp.npy" and Zero: "CorrectedResp_Zero_Temp_ContinualLearning.npy"
+4) PUF Golden responses at all temperatures and all boards: "GResp_UNO_temp_all.npy" and Zero: "GResp_temp_Zero_all_Oct14.npy"
    
 ### Soft Decoding Parameters for Concatenated Code(C1, C2):
 C1 - Repetetion Code (n1,k1,d1); n1 = 3, k1 = 1, d1 = 3
