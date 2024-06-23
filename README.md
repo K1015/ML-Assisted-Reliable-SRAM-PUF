@@ -1,5 +1,5 @@
 # ML-Assisted-Reliable-SRAM-PUF
-This repository contains the code for the paper titled "Enhancing SRAM-Based PUF Reliability Through Machine Learning-Aided Calibration Techniques". The codes and data required to replicate the plots in the paper will be available upon request for the camera-ready version. Please note that the raw data for the Zero boards are not included in this repository due to space limitations (CSV file size exceeds 100MB) but can be provided upon request.
+This repository contains the code for the paper titled "Enhancing SRAM-Based PUF Reliability Through Machine Learning-Aided Calibration Techniques". The codes and data required to replicate the plots in the paper will be available upon request for the camera-ready version. Please note that the raw data for the Zero boards are not included in this repository due to space limitations (CSV file size exceeds 100MB) but will be provided upon request.
 
 This repository includes the following:
 ## Raw Data for Arduino UNO
